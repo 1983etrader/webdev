@@ -121,6 +121,13 @@ add_action( 'widgets_init', 'bluestrap_widgets_init' );
  */
 function bluestrap_scripts() {
 	wp_enqueue_style( 'bluestrap-style', get_stylesheet_uri() );
+	
+	wp_enqueue_script( 'bootstrap-jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js');
+    
+    	wp_enqueue_script( 'bootstrap-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js');
+    
+    	wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js');
+
 
 	wp_enqueue_script( 'bluestrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
